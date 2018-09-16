@@ -1,0 +1,30 @@
+<html>
+<head></head>
+<script type="text/javascript" src="bigbangtheory.js"></script>
+<body>
+ <script type="text/javascript">
+
+    let EpisodeIDArr=[]
+ 	let episodeID=(allEpisode,...episodeIDs)=>{
+
+            //console.log(episodeIDs);
+
+ 			for(currentID in allEpisode._embedded.episodes){
+
+ 				if(allEpisode._embedded.episodes[currentID].id==episodeIDs[currentID]){  //condition for checking individually the two 																				   episode IDs entered by user
+
+                   console.log(allEpisode._embedded.episodes[currentID])
+ 				}
+            }
+ 	}
+
+
+ 	//let num=window.prompt("Enter the total number of episode IDs you want to search");
+ 	
+   let ID=window.prompt("Enter the Episode 1");
+   let ID1=window.prompt("Enter the Episode 2");
+
+ 	episodeID(AllEpisode,ID,ID1);
+ </script>
+</body>
+</html>

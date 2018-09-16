@@ -1,0 +1,5 @@
+1. The first function has been modified from simple javascript to ES6.
+2. The second function has been modified from simple javascript to ES6.
+3. The third function contains the logic for taking two inputs i.e. season number and epiode number and based on inputs the function returns all the information related to episodes using ES6.
+4. The fourth function contains logic for taking any number of episode IDs as input using the concept of Rest parameter and returning all the information related to episodes using ES6.
+5. The fifth function contains logic for searching episodes based on episode name using the concept of traversing the whole object array and if found the flag value is set to true else flag value is set to false through ES6.

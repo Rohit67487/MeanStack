@@ -1,0 +1,24 @@
+<html>
+<head></head>
+<script type="text/javascript" src="bigbangtheory.js"></script>
+<body>
+ <script type="text/javascript">
+	let episode=(seasonNumber,episodeNumber,allEpisode)=>{
+
+		for(currentEpisode in allEpisode._embedded.episodes){
+
+          if((allEpisode._embedded.episodes[currentEpisode].season==seasonNumber) && (allEpisode._embedded.episodes[currentEpisode].number==episodeNumber)) // condition for checking season number and episode number in an array.
+
+             console.log(allEpisode._embedded.episodes[currentEpisode])
+
+		}
+	}
+	
+    
+    let seasonNumber=window.prompt("Enter seasonNumber to watch");
+    let episodeNumber=window.prompt("Enter episodeNumber to watch");
+
+    episode(seasonNumber,episodeNumber,AllEpisode);
+ </script>
+</body>
+</html>

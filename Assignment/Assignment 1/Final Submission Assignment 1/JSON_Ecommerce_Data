@@ -1,0 +1,61 @@
+var Ecommerce data={
+		"kind":"flipkart#searchListResponse",
+		"categories":[{
+		"cat_id":"1",
+		"cat_Type":"Electronics",
+		"cat_Subtype":[{
+					"Sub_id":"A1",
+					"Sub_Type":"mobiles",
+					"Sub_name":[
+				               {
+								"Sub_name_id":"S1",
+								"Sub_name_name":"Moto",
+								"Sub_name_model":"G5Plus",
+								"Sub_name_price":16000
+								},
+								{
+								"Sub_name_id":"S2",
+								"Sub_name_name":"Xiomi",
+								"Sub_name_model":"A1",
+								"Sub_name_price":12000
+								},
+								]
+						},
+						{
+						"Sub_id":"A2",
+						"Sub_Type":"Television",
+						"Sub_name":[
+									{
+									  "Sub_name_id":"S3",
+									  "Sub_name_name":"Sony Bravia",
+									  "Sub_name_model":"B1",
+									  "Sub_name_price":25000
+									},
+									{
+									"Sub_name_id":"S4",
+									"Sub_name_name":"Samsung",
+									"Sub_name_model":"32J4003",
+									"Sub_name_price":17999
+									}
+
+                                    ]
+                        }]
+                        },
+        "cat_id":"2",
+        "cat_Type":"Home & Furniture",
+        "cat_SubType":[{
+                        "Sub_id":"A3",
+                        "Sub_Type":"Kitchen & Dining",
+                        "Sub_name":[
+                                    {
+                                      "Sub_name_id":"S4",
+                                      "Sub_name_name":"Induction Tawa",
+                                      "Sub_name_model":"Billion PT",
+                                      "Sub_name_price":399
+                                    }
+                                   ]
+                      }]
+                    ]
+                }
+								
+								

@@ -1,0 +1,5 @@
+1. JSON_Ecommerce_Data file has the code containing JSON data store for Ecommmerce website like flipkart.
+2. PokemonGo.js has JSON data store of all pokemon.
+3. Function1.html contain a function, taking pokemon Name as an argument and displaying the information of that pokemon.
+4. Function2.html contain a function, taking pokemon Name as an argument and displaying all pokemon whose next evolution name matches with the pokemon.
+5. Function3.html contain a function, taking pokemon weakness as an argument and displaying all pokemon who are having same weakness.

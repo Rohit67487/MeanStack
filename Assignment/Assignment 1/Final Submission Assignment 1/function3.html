@@ -1,0 +1,26 @@
+<html>
+<head></head>
+
+<script type="text/javascript" src="PokemonGo.js"></script>
+<body>
+ <script type="text/javascript">
+var Pokemon_Info = function(weakness,PokemonData){
+
+	for(currentName in PokemonData.pokemon){
+
+	    for (x in PokemonData.pokemon[currentName].weaknesses) {
+	    	
+	    	if(PokemonData.pokemon[currentName].weaknesses[x]==weakness){    //comparing pokemon weakness with weakness array elements
+
+	    		 alert(PokemonData.pokemon[currentName].name);   // printing pokemon name whose weakness found in weakness array
+	    	}
+	    }
+	}
+}
+
+	var weakness=window.prompt("Enter weakness of pokemon to be searched"); //taking as an argument from user
+
+	Pokemon_Info(weakness,AllPokemon) // invoking function
+   </script>
+ </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<head></head>
+
+<script type="text/javascript" src="PokemonGo.js"></script>
+<body>
+ <script type="text/javascript">
+var Pokemon_Info = function(name,PokemonData){
+	var Found=false;
+
+	for(currentName in PokemonData.pokemon){   
+
+	    console.log(PokemonData.pokemon[currentName])
+
+	    if(PokemonData.pokemon[currentName]["name"]==name){    //comparing pokemon name with user entered name
+
+	     Found=true;
+	     break;
+	    }
+	    else{
+         Found=false;
+	    }
+	    }  //End For In Loop
+
+	    if(Found == true){
+
+	     for(currentName in PokemonData.pokemon){
+
+	       console.log(PokemonData.pokemon[currentName])
+
+	       alert(JSON.stringify(PokemonData.pokemon[currentName]))   //printing pokemon information in string format
+
+	       break;
+
+	     }
+	    }
+	    else{
+	       alert("No Pokemon Found with this name")
+	    }
+	}
+
+	var Pokemon=window.prompt("Enter Pokemon Name to search") //taking as an argument from user
+
+	Pokemon_Info(Pokemon,AllPokemon) // invoking function
+   </script>
+ </body>
+</html>

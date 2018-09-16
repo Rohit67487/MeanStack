@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<script type="text/javascript" src="bigbangtheory.js"></script>
+<body>
+	<script type="text/javascript">
+		let found=false;
+		let Name=(episodeName,allepisode)=>{
+
+			for(currentName in allepisode._embedded.episodes){
+
+				if(allepisode._embedded.episodes[currentName].name==episodeName){  //condition for searching episodes by episode name. 
+
+					console.log(allepisode._embedded.episodes[currentName])
+					found=true;
+				}	
+			}
+
+			if(found==false){
+				console.log("Epiode not Found");
+			}
+		}
+       
+       let EName=window.prompt("Enter the episode name to search");
+		Name(EName,AllEpisode);
+	</script>
+</body>
+</html>
